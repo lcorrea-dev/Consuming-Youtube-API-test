@@ -78,20 +78,20 @@
 </template>
 
 <script>
-import { ref } from "vue";
-import YoutubeSearch from "./components/YoutubeSearch.vue";
+import { ref } from 'vue';
+import YoutubeSearch from './components/YoutubeSearch.vue';
 
 export default {
-  name: "LayoutDefault",
+  name: 'LayoutDefault',
 
   components: {
-    YoutubeSearch
+    YoutubeSearch,
   },
 
   setup() {
     return {
-      leftDrawerOpen: ref(false)
+      leftDrawerOpen: ref(false),
     };
-  }
+  },
 };
 </script>
