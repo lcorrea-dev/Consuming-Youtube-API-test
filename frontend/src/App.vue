@@ -1,6 +1,5 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-
     <q-header elevated class="glossy">
       <q-toolbar>
         <q-btn
@@ -19,16 +18,22 @@
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered class="bg-grey-2">
       <q-list>
-        <q-item-label header>Technical test by
+        <q-item-label header
+          >Technical test by
           <span class="text-weight-bold">Luis Correa</span>
         </q-item-label>
-        <q-item clickable tag="a" target="_blank" href="https://github.com/quasarframework/">
+        <q-item
+          clickable
+          tag="a"
+          target="_blank"
+          href="https://github.com/lcorrea-dev/Consuming-Youtube-API-test/"
+        >
           <q-item-section avatar>
             <q-icon name="code" />
           </q-item-section>
           <q-item-section>
             <q-item-label>Github repository for this project</q-item-label>
-            <q-item-label caption>github.com/quasarframework</q-item-label>
+            <q-item-label caption>github.com/lcorrea-dev/Consuming-Youtube-API-test</q-item-label>
           </q-item-section>
         </q-item>
         <q-item clickable tag="a" target="_blank" href="mailto: l.correa.bruna@gmail.com">
@@ -49,7 +54,12 @@
             <q-item-label caption>@lcorrea-dev</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://www.linkedin.com/in/luis-correa-bruna-19510084/">
+        <q-item
+          clickable
+          tag="a"
+          target="_blank"
+          href="https://www.linkedin.com/in/luis-correa-bruna-19510084/"
+        >
           <q-item-section avatar>
             <q-icon name="feed" />
           </q-item-section>
@@ -64,25 +74,24 @@
     <q-page-container>
       <YoutubeSearch />
     </q-page-container>
-
   </q-layout>
 </template>
 
 <script>
-import { ref } from 'vue';
-import YoutubeSearch from './components/YoutubeSearch.vue';
+import { ref } from "vue";
+import YoutubeSearch from "./components/YoutubeSearch.vue";
 
 export default {
-  name: 'LayoutDefault',
+  name: "LayoutDefault",
 
   components: {
-    YoutubeSearch,
+    YoutubeSearch
   },
 
   setup() {
     return {
-      leftDrawerOpen: ref(false),
+      leftDrawerOpen: ref(false)
     };
-  },
+  }
 };
 </script>
